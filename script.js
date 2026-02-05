@@ -16,8 +16,31 @@ let all = document.getElementsByTagName("*");
 let list = document.getElementsByTagName("li");
 // console.log(list);
 for(let i = 0; i  < list.length; i++){
-    console.log(list[i].style.color='red');
+    // console.log(list[i].style.color='red');
 }
-console.log(list[4].innerHTML);
+// console.log(list[4].innerHTML);
 
 
+// Task code here:
+let items = document.getElementsByTagName("li");
+console.log(items);
+for(let l = 0; l < items.length; l++){
+    console.log(items[l].innerText);
+    if(items[l].innerText === "JavaScript"){
+        items[l].style.color='green'
+    }
+}
+// let li = ul.getElementsByTagName("li");
+// console.log(li);
+
+// boxing code here: 
+let boxing = document.getElementById('boxing');
+// console.log(boxing);
+let button = boxing.getElementsByTagName("button");
+// console.log(button);
+for(let b = 0; b < button.length; b++){
+    console.log(button[b].style.background='black');
+    button[b].style.color='white'
+    button[b].style.padding='10px'
+    // button[b.style.color='yellow']
+}
