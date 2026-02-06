@@ -64,3 +64,23 @@ const change = () => {
         title.style.color='green'
     }
 }
+// Advance:
+let btn = document.getElementById("btn");
+console.log(btn);
+btn.addEventListener('click',function(){
+    let items = document.getElementsByClassName("item");
+    // console.log(items);
+    for(let item of items){
+        // console.log(item);
+        item.style.color='red';
+    }
+})
+// Anoter way same code:
+const changeColor = ()=>{
+    let items = document.querySelectorAll(".item");
+    // console.log(items);
+    items.forEach((element)=>{
+        console.log(element);
+        element.style.background = 'yellow'
+    })
+}
